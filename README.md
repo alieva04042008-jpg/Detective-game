@@ -1,59 +1,46 @@
-# 🕵️‍♀️ AI Detective Game
+# Detective Game
 
-An interactive detective game powered by AI where every case is unique.
+This is a small fullstack detective game where the player solves a generated crime case.
 
-Solve crimes, interrogate suspects, and prove your logic — then let AI judge your reasoning.
+The player can start a new case, talk to suspects, ask questions, choose who they think is guilty, and explain their reasoning. The AI is used to create the story, answer as the suspects, and evaluate the final answer.
 
----
+## Features
 
-## ✨ Features
+* Generated detective cases
+* 3 suspects in each case
+* Suspects with different personalities and motives
+* Interrogation system
+* Final accusation step
+* AI feedback and score for the player’s reasoning
+* Frontend and backend version
+* SQLite database
 
-* 🧠 AI-generated crime cases
-* 👥 3 unique suspects with personalities
-* 💬 Interrogation system (ask questions)
-* 🎯 Accusation phase
-* 📝 AI evaluates your answer and gives a score
-* 🌐 Fullstack app (Frontend + Backend)
-* ☁️ Deployed online
+## Tech Stack
 
----
+**Frontend**
 
-## 🚀 Live Demo
+* React
+* Vite
+* CSS
 
-* 🔗 Frontend: *(your frontend link here)*
-* 🔗 Backend API Docs: *(your backend link here)/docs*
+**Backend**
 
----
+* Python
+* FastAPI
+* SQLite
+* SQLAlchemy
 
-## 🏗️ Tech Stack
+**AI**
 
-### Frontend
+* Google Gemini API
 
-* ⚛️ React (Vite)
-* 🎨 Custom CSS
+**Deployment**
 
-### Backend
+* Railway
 
-* 🚀 FastAPI
-* 🐍 Python
+## Project Structure
 
-### AI
-
-* 🤖 Google Gemini API
-
-### Database
-
-* 🗄️ SQLite (SQLAlchemy)
-
-### Deployment
-
-* ☁️ Railway
-
----
-
-## 📂 Project Structure
-
-```
+```text
 Detective-game/
 │
 ├── detective-backend/
@@ -70,35 +57,21 @@ Detective-game/
 │   └── App.jsx
 ```
 
----
+## How the Game Works
 
-## 🧠 How It Works
+1. The user starts a new case.
+2. The backend creates the case description and suspects.
+3. The user asks suspects questions.
+4. The suspects answer based on their role in the case.
+5. The user chooses who they think committed the crime.
+6. The user writes an explanation.
+7. The AI checks the explanation and gives feedback.
 
-1. User starts a new case
-2. Backend generates:
+## Running the Project Locally
 
-   * case description
-   * 3 suspects
-3. User asks questions to suspects
-4. AI responds in character
-5. User selects the murderer
-6. User explains reasoning
-7. AI evaluates and gives a score
+### Backend
 
----
-
-## ⚙️ Setup Locally
-
-### 1. Clone repo
-
-```
-git clone <your-repo-link>
-cd Detective-game
-```
-
-### 2. Backend
-
-```
+```bash
 cd detective-backend
 python3 -m venv venv
 source venv/bin/activate
@@ -106,71 +79,50 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
 
-Open:
+API docs:
 
-```
+```text
 http://127.0.0.1:8000/docs
 ```
 
----
+### Frontend
 
-### 3. Frontend
-
-```
+```bash
 cd detective-frontend
 npm install
 npm run dev
 ```
 
----
+Create a frontend environment variable:
 
----
-
-### Frontend
-
-```
+```text
 VITE_API_BASE_URL=http://127.0.0.1:8000/api
 ```
 
----
+## Live Demo
 
-## 🌍 Deployment
+Frontend: add your frontend link here
+Backend API docs: add your backend link here
 
-* Backend deployed with Railway
-* Frontend deployed with Railway
+## Future Improvements
 
----
+* More detailed suspect personalities
+* Different difficulty levels
+* Saved game history
+* User accounts
+* More case types
+* Better scoring system
+* Multiple endings
 
-## 🎯 Future Improvements
+## Why I Made This
 
-* 🎭 More complex AI personalities
-* 📊 Score history
-* 🔐 User accounts
-* 🎮 Difficulty levels
-* 🧩 Multiple endings
+I wanted to build something more interesting than a basic CRUD app. This project helped me practice working with a backend, frontend, database, API routes, and AI integration in one project.
 
----
+## Author
 
-## 💡 Inspiration
-
-Inspired by detective games and the idea of using AI as both:
-
-* storyteller
-* and judge
-
----
-
-## 👩‍💻 Author
-
-**Alina**
+Alina
 Harbour.Space University student
 
----
-
-## ⭐ If you like this project
-
-Give it a star ⭐ on GitHub!
-
-Members :
 GitHub: @alieva04042008-jpg
-Email: alieva04042008@gmail.com
+Email: [alieva04042008@gmail.com](mailto:alieva04042008@gmail.com)
+
